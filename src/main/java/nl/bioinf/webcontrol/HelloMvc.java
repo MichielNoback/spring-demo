@@ -12,6 +12,7 @@ public class HelloMvc {
     @GetMapping(value = "hello")
     public String getGreeting(Model model) {
         model.addAttribute("greeting", "Hello to MVC");
+        //this will look up the tamplate greeting.html under resources/templates
         return "greeting";
     }
 }
